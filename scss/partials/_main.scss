@@ -1,0 +1,60 @@
+html, body {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  color: $lightText;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font;
+  font-weight: $heading;
+  color: $lightText;
+}
+p {
+  font-family: $font;
+  font-weight: $paragraph;
+  color: $lightText;
+}
+
+main {
+  display: block;
+  box-sizing: inherit;
+  width: 100%;
+  font-family: $font;
+  font-weight: $paragraph;
+  color: $lightText;
+  
+  .navbar {
+    position: fixed;
+    width:87.5%;
+    height:100px;
+    top:0;
+    right:0;
+    background: $bgNav;
+    
+    @include medium {
+      width:75%;
+    }
+    @include small {
+      position: static;
+      width:100%;
+    }
+  }
+  
+  .page {
+    width:87.5%;
+    min-height:100%;
+    margin-top:100px;
+    margin-left:12.5%;
+    @include gradient-linear(#f23064, #ad2ee8, #6728d3, #2acbe0, #67f230, #67f230, #e2e22b, #ce8027);
+    @include medium {
+      width:75%;
+      margin-left:25%
+    }
+    @include small {
+      width:100%;
+      margin-left:0;
+    }
+  }
+  
+}

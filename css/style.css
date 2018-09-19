@@ -1,0 +1,166 @@
+@keyframes gradientAnim {
+  0% {
+    background-position: -5% 0; }
+  100% {
+    background-position: 105% 0; } }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #e9fac8; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #e9fac8; }
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #e9fac8; }
+
+main {
+  display: block;
+  box-sizing: inherit;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: #e9fac8; }
+  main .navbar {
+    position: fixed;
+    width: 87.5%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    background: #1c7ed6; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      main .navbar {
+        width: 75%; } }
+    @media only screen and (min-width: 0px) and (max-width: 640px) {
+      main .navbar {
+        position: static;
+        width: 100%; } }
+  main .page {
+    width: 87.5%;
+    min-height: 100%;
+    margin-top: 100px;
+    margin-left: 12.5%;
+    background-color: #f23064;
+    /* Old browsers */
+    background-image: -moz-linear-gradient(left, #f23064 0%, #ad2ee8 12.5%, #6728d3 25%, #2acbe0 37.5%, #67f230 50%, #67f230 62.5%, #e2e22b 75%, #ce8027 87.5%, #f23064 100%);
+    /* FF3.6-15 */
+    background-image: -webkit-linear-gradient(left, #f23064 0%, #ad2ee8 12.5%, #6728d3 25%, #2acbe0 37.5%, #67f230 50%, #67f230 62.5%, #e2e22b 85.5%, #ce8027 87.5%, #f23064 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background-image: linear-gradient(to right, #f23064 0%, #ad2ee8 12.5%, #6728d3 25%, #2acbe0 37.5%, #67f230 50%, #67f230 62.5%, #e2e22b 75%, #ce8027 87.5%, #f23064 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-size: 2000% 400%;
+    background-position: 0 0;
+    animation-name: gradientAnim;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-duration: 60s;
+    animation-timing-function: linear; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      main .page {
+        width: 75%;
+        margin-left: 25%; } }
+    @media only screen and (min-width: 0px) and (max-width: 640px) {
+      main .page {
+        width: 100%;
+        margin-left: 0; } }
+
+.navbar ul.tabs {
+  float: left;
+  margin: 0;
+  padding: 0; }
+  .navbar ul.tabs li {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+    .navbar ul.tabs li a {
+      color: #e9fac8;
+      background: #1c7ed6;
+      text-decoration: none; }
+      .navbar ul.tabs li a.active {
+        color: #f9f0f7;
+        background: #e9fac8; }
+
+.workflow-container {
+  display: block;
+  box-sizing: border-box;
+  width: 350px;
+  height: 350px; }
+  .workflow-container canvas {
+    display: block;
+    position: static; }
+
+.btn {
+  border: none;
+  font-weight: 400;
+  font-size: 10pt;
+  box-shadow: none;
+  padding: 4px 8px; }
+  .btn.success {
+    color: #fff;
+    background: #29930f; }
+    .btn.success:hover {
+      background: #2faa11; }
+    .btn.success:active {
+      background: #1c650a; }
+  .btn.danger {
+    color: #fff;
+    background: #a70000; }
+    .btn.danger:hover {
+      background: #c10000; }
+    .btn.danger:active {
+      background: #740000; }
+  .btn.default {
+    color: #fff;
+    background: #499cb5; }
+    .btn.default:hover {
+      background: #428ca3; }
+    .btn.default:active {
+      background: #244e5a; }
+
+#salesman-stats {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #salesman-stats .card-sales-stats {
+    flex: 1;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 0 6px 16px -4px #404;
+    background: #fff;
+    text-align: center; }
+    #salesman-stats .card-sales-stats .profile-banner h4 {
+      color: #404; }
+    #salesman-stats .card-sales-stats .daily, #salesman-stats .card-sales-stats .monthly {
+      display: flex;
+      flex-wrap: wrap; }
+      #salesman-stats .card-sales-stats .daily h3, #salesman-stats .card-sales-stats .monthly h3 {
+        width: 100%;
+        color: #404;
+        margin: 12px 0 40px 0; }
+      #salesman-stats .card-sales-stats .daily .target, #salesman-stats .card-sales-stats .daily .sales, #salesman-stats .card-sales-stats .monthly .target, #salesman-stats .card-sales-stats .monthly .sales {
+        color: #1c7ed6;
+        flex: 1;
+        position: relative; }
+        #salesman-stats .card-sales-stats .daily .target:before, #salesman-stats .card-sales-stats .daily .sales:before, #salesman-stats .card-sales-stats .monthly .target:before, #salesman-stats .card-sales-stats .monthly .sales:before {
+          position: absolute;
+          bottom: 100%;
+          width: 100%;
+          left: 0; }
+      #salesman-stats .card-sales-stats .daily .target:before, #salesman-stats .card-sales-stats .monthly .target:before {
+        content: "Target"; }
+      #salesman-stats .card-sales-stats .daily .sales:before, #salesman-stats .card-sales-stats .monthly .sales:before {
+        content: "Sales"; }
+    #salesman-stats .card-sales-stats .graph {
+      background: #fff;
+      color: #a70000; }
+
+body {
+  color: orange !important; }

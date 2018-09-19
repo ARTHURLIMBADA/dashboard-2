@@ -1,0 +1,101 @@
+.sidebar {
+  display: block;
+  position: fixed;
+  width: 12.5%;
+  height: 100%;
+  left:0;
+  top:0;
+  background: $bgSidebar;
+  box-sizing: inherit;
+  
+  @include medium {
+    width: 25%;
+  }
+  
+  @include small {
+    position: static;
+    width: 100%;
+  }
+
+  
+  .img-container {
+
+
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+
+    
+  .dash-menu {
+    display: block;
+    box-sizing: inherit;
+    margin:25px 0;
+    padding:0;
+    width: 100%;
+    
+    h3 {
+      display: block;
+      box-sizing: inherit;
+      font-family: $font;
+      font-size: 16pt ;
+      font-weight: $heading;
+      color:$lightText;
+      width: 80%;
+      margin:0 auto;
+      margin-top:10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $lightText;
+      
+      @include medium {
+        font-size: 12pt;
+      }
+      @include small {
+        font-size: 10pt;
+      }
+    }
+    
+    ul {
+      display: block;
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        display: block;
+        box-sizing: inherit;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $lightText;
+        
+        a {
+          color: $lightText;
+          text-decoration: none;
+          font-weight: $paragraph;
+          font-size: 10pt;
+          
+          i.fa {
+            float:right;
+            margin-top: 6px;
+          }
+        }
+      }
+      
+    }
+    
+  }
+}
+
+
+
+
+
+
+
