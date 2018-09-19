@@ -17,18 +17,24 @@
     width: 100%;
   }
 
-  
-  .img-container {
+  .profile-container {
+    
+    .img-container {
+      
+      text-align: center;
+      padding-top: 30px;
 
+      img {
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        position: center;
 
+      }
 
-    img {
-      width: 100%;
-      height: auto;
     }
+
   }
-
-
     
   .dash-menu {
     display: block;
@@ -86,10 +92,9 @@
             margin-top: 6px;
           }
         }
+
       }
-      
     }
-    
   }
 }
 

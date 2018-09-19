@@ -1,4 +1,6 @@
 .navbar {
+  
+
   ul.tabs {
     float:left;
     margin:0;
@@ -11,12 +13,12 @@
       
       a {
         color: $lightText;
-        background: $bgNav;
+        background: $bgSidebar;
         text-decoration: none;
        
         &.active {
           color:$darkText;
-          background: $lightText;
+          background: $bgSidebar;
         }
       }
       
