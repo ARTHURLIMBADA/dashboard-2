@@ -99,7 +99,7 @@ var jsonfile = {
        {
         "day": "29",
         "sales": 1
-        
+
     },
        {
         "day": "30",
@@ -118,18 +118,55 @@ var data = jsonfile.jsonarray.map(function (e) {
     return e.sales;
 });;
 
+// color palette
+var blue = "#0054DE";
+var yellow1 = "#FFCC01";
+var yellow2 = "#FFB302";
+var red1 = "#DE0112";
+var red2 = "#F80904";
+
 var ctx = canvas.getContext('2d');
 var config = {
     type: 'bar',
     data: {
         labels: labels,
-        datasets: [{
-            label: 'Daily Sales',
-            data: data,
-            backgroundColor: 'rgba(245,245,245, 1)',
+        datasets: [
+        {
+            label: 'Johns Sales',
+            data: jsonfile.jsonarray.map(function (e) {
+    return e.sales + 2;
+}),
+            backgroundColor: yellow1,
+        },
+        {
+            label: 'Bobs Sales',
+            data: jsonfile.jsonarray.map(function (e) {
+    return e.sales + 4;
+}),
+            backgroundColor: '#04395E'
+        },{
 
-        }]
+            label: 'Toms Sales',
+            data: data,
+            backgroundColor: '#whitesmoke',
+
+        },
+        
+        ]
+
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                stacked: true
+            }],
+            yAxes: [{
+                stacked: true
+            }]
+        }
     }
 };
+
+Chart.defaults.global.defaultFontColor = 'whitesmoke';
 
 var chart = new Chart(ctx, config);
