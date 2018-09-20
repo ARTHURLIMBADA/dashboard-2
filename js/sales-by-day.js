@@ -37,9 +37,10 @@ var config = {
     data: {
         labels: labels,
         datasets: [{
-            label: 'Daily Sales',
+            label: 'Monthly Sales',
             data: data,
-            backgroundColor: 'rgba(0, 119, 204, 0.3)'
+            backgroundColor: 'rgba(245,245,245, 1)',
+
         }]
     }
 };

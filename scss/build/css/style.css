@@ -8,17 +8,18 @@ html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #e9fac8; }
+  color: whitesmoke;
+  background-color: #ECECEC; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
-  color: #e9fac8; }
+  color: whitesmoke; }
 
 p {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  color: #e9fac8; }
+  color: whitesmoke; }
 
 main {
   display: block;
@@ -26,14 +27,15 @@ main {
   width: 100%;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
-  color: #e9fac8; }
+  color: whitesmoke; }
   main .navbar {
     position: fixed;
     width: 87.5%;
     height: 100px;
     top: 0;
     right: 0;
-    background: #e60000; }
+    background: #e60000;
+    z-index: 2; }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       main .navbar {
         width: 75%; } }
@@ -46,22 +48,12 @@ main {
     min-height: 100%;
     margin-top: 100px;
     margin-left: 12.5%;
-    background-color: #f23064;
-    /* Old browsers */
-    background-image: -moz-linear-gradient(left, #f23064 0%, #ad2ee8 12.5%, #6728d3 25%, #2acbe0 37.5%, #67f230 50%, #67f230 62.5%, #e2e22b 75%, #ce8027 87.5%, #f23064 100%);
-    /* FF3.6-15 */
-    background-image: -webkit-linear-gradient(left, #f23064 0%, #ad2ee8 12.5%, #6728d3 25%, #2acbe0 37.5%, #67f230 50%, #67f230 62.5%, #e2e22b 85.5%, #ce8027 87.5%, #f23064 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background-image: linear-gradient(to right, #f23064 0%, #ad2ee8 12.5%, #6728d3 25%, #2acbe0 37.5%, #67f230 50%, #67f230 62.5%, #e2e22b 75%, #ce8027 87.5%, #f23064 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    background-repeat: no-repeat;
-    background-size: 2000% 400%;
-    background-position: 0 0;
-    animation-name: gradientAnim;
-    animation-iteration-count: infinite;
-    animation-delay: 0;
-    animation-duration: 60s;
-    animation-timing-function: linear; }
+    background: #ECECEC; }
+    main .page .sales-container {
+      background-color: #e60000;
+      width: 89%;
+      margin: 0 auto;
+      margin-bottom: 50px; }
     @media only screen and (min-width: 641px) and (max-width: 1024px) {
       main .page {
         width: 75%;
@@ -80,7 +72,7 @@ main {
     padding: 0;
     margin: 0; }
     .navbar ul.tabs li a {
-      color: #e9fac8;
+      color: whitesmoke;
       background: #e60000;
       text-decoration: none; }
       .navbar ul.tabs li a.active {
@@ -95,7 +87,9 @@ main {
   left: 0;
   top: 0;
   background: #e60000;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  box-shadow: 0 10px 10px 0px #8b0000;
+  z-index: 5; }
   @media only screen and (min-width: 641px) and (max-width: 1024px) {
     .sidebar {
       width: 25%; } }
@@ -103,11 +97,34 @@ main {
     .sidebar {
       position: static;
       width: 100%; } }
+  .sidebar .profile-container h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px; }
+  .sidebar .profile-container h3 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin: 0; }
+  .sidebar .profile-container p {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: -10px;
+    font-weight: 300; }
   .sidebar .profile-container .img-container {
     text-align: center;
     padding-top: 30px; }
     .sidebar .profile-container .img-container img {
       width: 100px;
+      height: auto;
+      margin: 0 auto;
+      position: center; }
+  .sidebar .profile-container .profile-container {
+    text-align: center;
+    padding-top: 30px; }
+    .sidebar .profile-container .profile-container img {
+      width: 90px;
       height: auto;
       margin: 0 auto;
       position: center; }
@@ -123,13 +140,13 @@ main {
       font-family: "Roboto Slab", serif;
       font-size: 16pt;
       font-weight: 700;
-      color: #e9fac8;
+      color: whitesmoke;
       width: 80%;
       margin: 0 auto;
       margin-top: 10px;
       margin-bottom: 10px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #e9fac8; }
+      border-bottom: 1px solid whitesmoke; }
       @media only screen and (min-width: 641px) and (max-width: 1024px) {
         .sidebar .dash-menu h3 {
           font-size: 12pt; } }
@@ -149,9 +166,9 @@ main {
         margin: 0 auto;
         margin-bottom: 10px;
         padding-bottom: 10px;
-        border-bottom: 1px solid #e9fac8; }
+        border-bottom: 1px solid whitesmoke; }
         .sidebar .dash-menu ul li a {
-          color: #e9fac8;
+          color: whitesmoke;
           text-decoration: none;
           font-weight: 400;
           font-size: 10pt; }

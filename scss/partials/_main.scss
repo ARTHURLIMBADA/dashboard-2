@@ -3,6 +3,7 @@ html, body {
   margin:0;
   box-sizing: border-box;
   color: $lightText;
+  background-color: $body;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -31,6 +32,8 @@ main {
     top:0;
     right:0;
     background: $bgSidebar;
+    z-index: 2;
+
     
     @include medium {
       width:75%;
@@ -46,7 +49,15 @@ main {
     min-height:100%;
     margin-top:100px;
     margin-left:12.5%;
-    @include gradient-linear(#f23064, #ad2ee8, #6728d3, #2acbe0, #67f230, #67f230, #e2e22b, #ce8027);
+    background: $body;
+    
+    .sales-container {
+      background-color: $bgSidebar;
+      width: 89%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+
     @include medium {
       width:75%;
       margin-left:25%
