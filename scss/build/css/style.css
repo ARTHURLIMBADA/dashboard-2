@@ -1,0 +1,295 @@
+@keyframes gradientAnim {
+  0% {
+    background-position: -5% 0; }
+  100% {
+    background-position: 105% 0; } }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: whitesmoke;
+  background-color: #ECECEC; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: whitesmoke; }
+
+p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: whitesmoke; }
+
+.dashboardmain {
+  display: block;
+  box-sizing: inherit;
+  width: 100%;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  color: whitesmoke; }
+  .dashboardmain .navbar {
+    position: fixed;
+    width: 87.5%;
+    height: 100px;
+    top: 0;
+    right: 0;
+    background: #e60000;
+    z-index: 2; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      .dashboardmain .navbar {
+        width: 75%; } }
+    @media only screen and (min-width: 0px) and (max-width: 640px) {
+      .dashboardmain .navbar {
+        position: static;
+        width: 100%; } }
+  .dashboardmain .page {
+    width: 87.5%;
+    min-height: 100%;
+    margin-top: 100px;
+    margin-left: 12.5%;
+    background: #ECECEC; }
+    .dashboardmain .page .sales-container {
+      background-color: #e60000;
+      width: 89%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      padding: 20px; }
+    @media only screen and (min-width: 641px) and (max-width: 1024px) {
+      .dashboardmain .page {
+        width: 75%;
+        margin-left: 25%; } }
+    @media only screen and (min-width: 0px) and (max-width: 640px) {
+      .dashboardmain .page {
+        width: 100%;
+        margin-left: 0; } }
+
+.navbar ul.tabs {
+  float: left;
+  margin: 0;
+  padding: 0; }
+  .navbar ul.tabs li {
+    display: inline-block;
+    padding: 0;
+    margin: 0; }
+    .navbar ul.tabs li a {
+      color: whitesmoke;
+      background: #e60000;
+      text-decoration: none; }
+      .navbar ul.tabs li a.active {
+        color: black;
+        background: #e60000; }
+
+.sidebar {
+  display: block;
+  position: fixed;
+  width: 12.5%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #e60000;
+  box-sizing: inherit;
+  box-shadow: 0 10px 10px 0px #8b0000;
+  z-index: 5; }
+  @media only screen and (min-width: 641px) and (max-width: 1024px) {
+    .sidebar {
+      width: 25%; } }
+  @media only screen and (min-width: 0px) and (max-width: 640px) {
+    .sidebar {
+      position: static;
+      width: 100%; } }
+  .sidebar .profile-container h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px; }
+  .sidebar .profile-container h3 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin: 0; }
+  .sidebar .profile-container p {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: -10px;
+    font-weight: 300; }
+  .sidebar .profile-container .img-container {
+    text-align: center;
+    padding-top: 30px; }
+    .sidebar .profile-container .img-container img {
+      width: 100px;
+      height: auto;
+      margin: 0 auto;
+      position: center; }
+  .sidebar .profile-container .profile-container {
+    text-align: center;
+    padding-top: 30px; }
+    .sidebar .profile-container .profile-container img {
+      width: 90px;
+      height: auto;
+      margin: 0 auto;
+      position: center; }
+  .sidebar .dash-menu {
+    display: block;
+    box-sizing: inherit;
+    margin: 25px 0;
+    padding: 0;
+    width: 100%; }
+    .sidebar .dash-menu h3 {
+      display: block;
+      box-sizing: inherit;
+      font-family: "Roboto Slab", serif;
+      font-size: 16pt;
+      font-weight: 700;
+      color: whitesmoke;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid whitesmoke; }
+      @media only screen and (min-width: 641px) and (max-width: 1024px) {
+        .sidebar .dash-menu h3 {
+          font-size: 12pt; } }
+      @media only screen and (min-width: 0px) and (max-width: 640px) {
+        .sidebar .dash-menu h3 {
+          font-size: 10pt; } }
+    .sidebar .dash-menu ul {
+      display: block;
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      .sidebar .dash-menu ul li {
+        display: block;
+        box-sizing: inherit;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid whitesmoke; }
+        .sidebar .dash-menu ul li a {
+          color: whitesmoke;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 10pt; }
+          .sidebar .dash-menu ul li a i.fa {
+            float: right;
+            margin-top: 6px; }
+
+.workflow-container {
+  display: block;
+  box-sizing: border-box;
+  width: 350px;
+  height: 350px; }
+  .workflow-container canvas {
+    display: block;
+    position: static; }
+
+.btn {
+  border: 2px solid whitesmoke;
+  font-weight: 400;
+  font-size: 10pt;
+  box-shadow: none;
+  padding: 6px 20px; }
+  .btn form-inline {
+    color: white; }
+  .btn.success {
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    background: #DE0112; }
+    .btn.success:hover {
+      background: white;
+      color: #F80904; }
+    .btn.success:active {
+      background: gainsboro;
+      color: #F80904; }
+  .btn.danger {
+    color: whitesmoke;
+    background: #DE0112;
+    border: 2px solid whitesmoke; }
+    .btn.danger:hover {
+      background: #c10000; }
+    .btn.danger:active {
+      background: #740000; }
+  .btn.default {
+    color: whitesmoke;
+    background: #DE0112;
+    border: 2px solid whitesmoke; }
+    .btn.default:hover {
+      background: #428ca3; }
+    .btn.default:active {
+      background: #244e5a; }
+
+#salesman-stats {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #salesman-stats .card-sales-stats {
+    flex: 1;
+    margin: 40px;
+    padding: 40px;
+    box-shadow: 0 6px 16px -4px lightgrey;
+    background: #fff;
+    text-align: center; }
+    #salesman-stats .card-sales-stats .profile-banner h4 {
+      color: whitesmoke;
+      background-color: #e60000;
+      padding: 3px;
+      font-size: 30px; }
+    #salesman-stats .card-sales-stats .daily, #salesman-stats .card-sales-stats .monthly {
+      display: flex;
+      flex-wrap: wrap; }
+      #salesman-stats .card-sales-stats .daily h3, #salesman-stats .card-sales-stats .monthly h3 {
+        width: 100%;
+        color: #e60000;
+        margin: 12px 0 40px 0; }
+      #salesman-stats .card-sales-stats .daily .target, #salesman-stats .card-sales-stats .daily .sales, #salesman-stats .card-sales-stats .monthly .target, #salesman-stats .card-sales-stats .monthly .sales {
+        color: #04395e;
+        flex: 1;
+        position: relative; }
+        #salesman-stats .card-sales-stats .daily .target:before, #salesman-stats .card-sales-stats .daily .sales:before, #salesman-stats .card-sales-stats .monthly .target:before, #salesman-stats .card-sales-stats .monthly .sales:before {
+          position: absolute;
+          bottom: 100%;
+          width: 100%;
+          left: 0; }
+      #salesman-stats .card-sales-stats .daily .target:before, #salesman-stats .card-sales-stats .monthly .target:before {
+        content: "Target"; }
+      #salesman-stats .card-sales-stats .daily .sales:before, #salesman-stats .card-sales-stats .monthly .sales:before {
+        content: "Sales"; }
+    #salesman-stats .card-sales-stats .graph {
+      background: #fff;
+      color: #a70000;
+      margin-top: 20px;
+      padding: 3px;
+      border: 2px solid black; }
+
+.login-main {
+  height: 950px; }
+  .login-main .login {
+    text-align: center;
+    margin: auto;
+    padding-top: 400px;
+    padding-bottom: 100px;
+    background-color: #e60000; }
+    .login-main .login h1 {
+      font-size: 50px;
+      margin: 0 !important;
+      padding: 15px; }
+    .login-main .login a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px; }
+    .login-main .login .sign-container {
+      padding-top: 10px; }
+
+main.dark .card-sales-stats {
+  background-color: black; }
+
+main.dark .sidebar {
+  background: #04395e;
+  box-shadow: 0 10px 10px 0px black; }
+
+main.dark .navbar {
+  background: #04395e; }

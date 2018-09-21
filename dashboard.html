@@ -6,16 +6,17 @@
   <title>Dashboard Demo Vue.js</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="scss/build/css/style.css">
 </head>
 
 <body>
   
-  <main>
+  <main class="dashboardmain">
     <div class="sidebar" id="sidebar">
       <!-- Components for Profile and Contextual Menu -->
         <div id="profile">
@@ -40,65 +41,52 @@
     
     <section class="page" id="page">
       <div id="salesman-stats">
-        <salesman-stats 
-          img="img/vanessa.jpg" 
-          name="Jimmy Jones"
-          daily-target="75"
-          daily-sales="45"
-          monthly-target="1342"
-          monthly-sales="1502"
-          monthly-graph="14,2,53,42,54,12,35,42,42"
-          >           
-          </salesman-stats>
 
         <salesman-stats 
           img="img/vanessa.jpg" 
-          name="Vanessa Hudgens"
-          daily-target="12"
-          daily-sales="45"
-          monthly-target="200"
-          monthly-sales="1502"
+          name="John Hudgens"
+          daily-target="8"
+          daily-sales="9"
+          monthly-target="240"
+          monthly-sales="234"
           monthly-graph="2,2,53,42,54,12,35,42,42"
           >           
           </salesman-stats>
 
         <salesman-stats 
           img="img/vanessa.jpg" 
-          name="Tina Turner"
-          daily-target="750"
-          daily-sales="4"
-          monthly-target="1342"
-          monthly-sales="254"
+          name="Bob Turner"
+          daily-target="8"
+          daily-sales="11"
+          monthly-target="240"
+          monthly-sales="294"
           monthly-graph="14,2,53,42,54,12,35,42,42"
           >           
           </salesman-stats>
 
         <salesman-stats 
           img="img/vanessa.jpg" 
-          name="Jimmy Jones"
-          daily-target="75"
-          daily-sales="45"
-          monthly-target="1342"
-          monthly-sales="1502"
+          name="Tom Jones"
+          daily-target="8"
+          daily-sales="7"
+          monthly-target="240"
+          monthly-sales="204"
           monthly-graph="14,2,53,42,54,12,35,42,42"
           >           
           </salesman-stats>
       </div>
       <!-- components for specific pages -->
-      <div id="recentMessages">
+<!--       <div id="recentMessages">
         <recent-messages></recent-messages>
-      </div>
+      </div> -->
       
-      <div id="todo">
+<!--       <div id="todo">
         <todo></todo>
         
-      </div>
+      </div> -->
       
-      <div id="workflow" class="workflow-container">
-        <canvas class="workflow-chart" id="myChart" width="400" height="400"></canvas>
-      </div>
+
       <div id="sales" class="sales-container">
-        <canvas id="sales-canvas"></canvas>
         <canvas id="sales-by-day"></canvas>
       </div>
       
@@ -108,11 +96,14 @@
   
   
   <script src="js/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  
   <script src="js/profile.js"></script>
   <script src="js/dashmenu.js"></script>
   <script src="js/mainmenu.js"></script>
   <script src="js/minimenu.js"></script>
   <script src="js/todo.js"></script>
+  <!-- <script src="js/themer.js"></script> -->
   <script src="js/recent-messages.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
   <script src="js/workflow.js"></script>

@@ -1,23 +1,31 @@
 .btn {
-  border:none;
+  border: 2px solid $lightText;
   font-weight: $paragraph;
   font-size: 10pt;
   box-shadow: none;
-  padding:4px 8px;
+  padding:6px 20px;
   
+  form-inline {
+    color: white;
+  }
+
   &.success {
-    color:#fff;
-    background: $success;
+    border: 2px solid $lightText;
+    color:whitesmoke;
+    background: $red1;
     &:hover {
-      background: lighten($success, 5%);
+      background: lighten($lightText, 5%);
+      color: $red2;
     }
     &:active {
-       background: darken($success, 10%);
+       background: darken($lightText, 10%);
+       color: $red2;
     }
   }
   &.danger {
-    color:#fff;
-    background: $danger;
+    color: $lightText;
+    background: $red1;
+    border: 2px solid $lightText;
     &:hover {
       background: lighten($danger, 5%);
     }
@@ -26,8 +34,9 @@
     }
   }
   &.default {
-    color:#fff;
-    background: $default;
+    color: whitesmoke;
+    background: $red1;
+    border: 2px solid $lightText;
     &:hover {
       background: darken($default, 5%);
     }

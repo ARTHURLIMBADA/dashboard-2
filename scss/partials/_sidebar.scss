@@ -7,6 +7,8 @@
   top:0;
   background: $bgSidebar;
   box-sizing: inherit;
+  box-shadow: 0 10px 10px 0px #8b0000;
+  z-index: 5;
   
   @include medium {
     width: 25%;
@@ -17,18 +19,60 @@
     width: 100%;
   }
 
-  
-  .img-container {
+  .profile-container {
 
+    h2 {
+      padding-top: 25px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    h3 {
+      padding-top: 5px;
+      text-align: center;
+      font-size: 18px;
+      color: $darkText;
+      margin: 0;
+
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: -10px;
+      font-weight: 300;
+    }
+    
+    .img-container {
+      
+      text-align: center;
+      padding-top: 30px;
+
+      img {
+        width: 100px;
+        height: auto;
+        margin: 0 auto;
+        position: center;
+
+      }
+
+    }
+
+    .profile-container {
+      text-align: center;
+      padding-top: 30px;
 
 
     img {
-      width: 100%;
+      width: 90px;
       height: auto;
+      margin: 0 auto;
+      position: center;
+      }
+
     }
+
   }
-
-
     
   .dash-menu {
     display: block;
@@ -86,10 +130,9 @@
             margin-top: 6px;
           }
         }
+
       }
-      
     }
-    
   }
 }
 
