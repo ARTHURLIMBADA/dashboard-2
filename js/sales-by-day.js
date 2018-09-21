@@ -119,11 +119,12 @@ var data = jsonfile.jsonarray.map(function (e) {
 });;
 
 // color palette
-var blue = "#0054DE";
+var blue = "#04395e";
 var yellow1 = "#FFCC01";
 var yellow2 = "#FFB302";
 var red1 = "#DE0112";
 var red2 = "#F80904";
+var lightText = "whitesmoke";
 
 var ctx = canvas.getContext('2d');
 var config = {
@@ -143,14 +144,23 @@ var config = {
             data: jsonfile.jsonarray.map(function (e) {
     return e.sales + 4;
 }),
-            backgroundColor: '#04395E'
+            backgroundColor: blue,
         },{
 
             label: 'Toms Sales',
             data: data,
-            backgroundColor: '#whitesmoke',
+            backgroundColor: lightText,
 
         },
+
+        {
+            label: 'Expected Daily Sales',
+            type: 'line',
+            data: jsonfile.jsonarray.map(function (e) {
+    return 24;
+}),
+            backgroundColor: red1,
+        }
         
         ]
 

@@ -6,14 +6,17 @@
 
 	.card-sales-stats{
 		flex:1;
-		margin:50px;
-		padding:50px;
-		box-shadow:0 6px 16px -4px $bgSidebar;
+		margin:40px;
+		padding:40px;
+		box-shadow:0 6px 16px -4px lightgrey;
 		background: $bgBody;
 		text-align: center;
 		.profile-banner{
 			h4{
-				color: $bgSidebar;
+				color: $lightText;
+				background-color: $bgSidebar;
+				padding: 3px;
+				font-size: 30px;
 			}
 		}
 		.daily, .monthly {
@@ -27,7 +30,7 @@
 				margin: 12px 0 40px 0;
 			}
 			.target, .sales {
-				color: $bgNav;	
+				color: $blue;	
 				flex:1;
 				position:relative;
 				&:before {
@@ -52,6 +55,9 @@
 		.graph {
 			background:$bgBody;
 			color:$danger;
+			margin-top: 20px;
+			padding: 3px;
+			border: 2px solid black;
 			
 		}
 
